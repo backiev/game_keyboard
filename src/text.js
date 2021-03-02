@@ -39,7 +39,7 @@ export const arrays = {
        access: false,
      },
      3: {
-       value: 'Farhat',
+       value: 'Mastak',
        access: false,
      },
      4: {
