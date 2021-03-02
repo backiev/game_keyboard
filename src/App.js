@@ -1,61 +1,9 @@
 import {useState} from 'react';
+import {arrays} from './text.js';
 import './App.sass';
 
 function App() {
-  const arrays = {
-    0: {
-      0: {
-        value: 'Hello',
-        access: false,
-      },
-      1: {
-        value: 'how',
-        access: false,
-      },
-      2: {
-        value: 'are',
-        access: false,
-      },
-      3: {
-        value: 'you',
-        access: false,
-      },
-      4: {
-        value: 'my',
-        access: false,
-      },
-      5: {
-        value: 'friend',
-        access: false,
-      },
-    },
-    1: {
-      0: {
-        value: 'My',
-        access: false,
-      },
-      1: {
-        value: 'name',
-        access: false,
-      },
-      2: {
-        value: 'is',
-        access: false,
-      },
-      3: {
-        value: 'Farhat',
-        access: false,
-      },
-      4: {
-        value: 'my',
-        access: false,
-      },
-      5: {
-        value: 'friend',
-        access: false,
-      },
-    },
-  }
+  
   const randomTextNumber = Math.floor(Math.random() * Math.floor(Object.keys(arrays).length));
   const [text, setText] = useState(arrays[randomTextNumber]);
   const [valInput, setValInput] = useState('');
